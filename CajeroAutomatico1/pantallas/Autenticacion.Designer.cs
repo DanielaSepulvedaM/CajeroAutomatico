@@ -29,6 +29,7 @@ namespace CajeroAutomatico1.pantallas
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Autenticacion));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -77,6 +78,7 @@ namespace CajeroAutomatico1.pantallas
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.Window;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.Red;
             this.textBox1.Location = new System.Drawing.Point(166, 319);
             this.textBox1.Multiline = true;
@@ -114,7 +116,7 @@ namespace CajeroAutomatico1.pantallas
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = global::CajeroAutomatico1.Properties.Resources.Imagen7;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(728, 237);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(60, 212);
@@ -123,7 +125,7 @@ namespace CajeroAutomatico1.pantallas
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::CajeroAutomatico1.Properties.Resources.Imagen6;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(12, 237);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(60, 212);
@@ -132,7 +134,7 @@ namespace CajeroAutomatico1.pantallas
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::CajeroAutomatico1.Properties.Resources.Imagen5;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(166, 376);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(337, 72);
@@ -141,7 +143,7 @@ namespace CajeroAutomatico1.pantallas
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::CajeroAutomatico1.Properties.Resources.Imagen4;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(110, 319);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(28, 39);
@@ -152,7 +154,7 @@ namespace CajeroAutomatico1.pantallas
             // pictureBox3
             // 
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox3.Image = global::CajeroAutomatico1.Properties.Resources.Imagen3;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(242, 97);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(207, 137);
@@ -162,7 +164,7 @@ namespace CajeroAutomatico1.pantallas
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::CajeroAutomatico1.Properties.Resources.Imagen1;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(588, 0);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(212, 91);
@@ -172,7 +174,7 @@ namespace CajeroAutomatico1.pantallas
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::CajeroAutomatico1.Properties.Resources.Imagen2;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(591, 91);

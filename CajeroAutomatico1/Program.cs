@@ -17,7 +17,7 @@ namespace CajeroAutomatico1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Autenticacion());
+            Application.Run(new PagarFacturas());
         }
     }
 }

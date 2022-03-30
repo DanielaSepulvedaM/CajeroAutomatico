@@ -58,10 +58,64 @@
     <Compile Include="pantallas\Autenticacion.Designer.cs">
       <DependentUpon>Autenticacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="pantallas\MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pantallas\MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pantallas\PagarFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pantallas\PagarFacturas.Designer.cs">
+      <DependentUpon>PagarFacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pantallas\PantallaFinalRetiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pantallas\PantallaFinalRetiro.Designer.cs">
+      <DependentUpon>PantallaFinalRetiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pantallas\PantallaTransaccionExitosa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pantallas\PantallaTransaccionExitosa.Designer.cs">
+      <DependentUpon>PantallaTransaccionExitosa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pantallas\Retiros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pantallas\Retiros.Designer.cs">
+      <DependentUpon>Retiros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pantallas\Transferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pantallas\Transferencia.Designer.cs">
+      <DependentUpon>Transferencia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="pantallas\Autenticacion.resx">
       <DependentUpon>Autenticacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pantallas\MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pantallas\PagarFacturas.resx">
+      <DependentUpon>PagarFacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pantallas\PantallaFinalRetiro.resx">
+      <DependentUpon>PantallaFinalRetiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pantallas\PantallaTransaccionExitosa.resx">
+      <DependentUpon>PantallaTransaccionExitosa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pantallas\Retiros.resx">
+      <DependentUpon>Retiros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pantallas\Transferencia.resx">
+      <DependentUpon>Transferencia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -109,6 +163,93 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Imagen7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen20png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn31.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
