@@ -32,14 +32,26 @@ namespace CajeroAutomatico1.pantallas
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtBxIdentificacion = new System.Windows.Forms.TextBox();
-            this.txtBxCuenta = new System.Windows.Forms.TextBox();
-            this.listBxTpCta = new System.Windows.Forms.ListBox();
+            this.txtBxIdentDestino = new System.Windows.Forms.TextBox();
+            this.txtBxCtaDestino = new System.Windows.Forms.TextBox();
+            this.listBxTpCtaDestino = new System.Windows.Forms.ListBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtBxIdentOrigen = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtBxCtaOrigen = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.listBxTpCtaOrigen = new System.Windows.Forms.ListBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnTransferir = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -48,10 +60,10 @@ namespace CajeroAutomatico1.pantallas
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Myanmar Text", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(137, 221);
+            this.label1.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(229, 34);
+            this.label1.Size = new System.Drawing.Size(157, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "Número de identificación";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -59,53 +71,155 @@ namespace CajeroAutomatico1.pantallas
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Myanmar Text", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(136, 262);
+            this.label2.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 56);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(172, 34);
+            this.label2.Size = new System.Drawing.Size(119, 23);
             this.label2.TabIndex = 2;
             this.label2.Text = "Número de cuenta\r\n";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Myanmar Text", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(136, 307);
+            this.label3.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 89);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 34);
+            this.label3.Size = new System.Drawing.Size(97, 23);
             this.label3.TabIndex = 5;
             this.label3.Text = "Tipo de cuenta\r\n";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // txtBxIdentificacion
+            // txtBxIdentDestino
             // 
-            this.txtBxIdentificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxIdentificacion.Location = new System.Drawing.Point(395, 221);
-            this.txtBxIdentificacion.Multiline = true;
-            this.txtBxIdentificacion.Name = "txtBxIdentificacion";
-            this.txtBxIdentificacion.Size = new System.Drawing.Size(270, 30);
-            this.txtBxIdentificacion.TabIndex = 6;
+            this.txtBxIdentDestino.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxIdentDestino.Location = new System.Drawing.Point(168, 20);
+            this.txtBxIdentDestino.Multiline = true;
+            this.txtBxIdentDestino.Name = "txtBxIdentDestino";
+            this.txtBxIdentDestino.Size = new System.Drawing.Size(180, 27);
+            this.txtBxIdentDestino.TabIndex = 6;
             // 
-            // txtBxCuenta
+            // txtBxCtaDestino
             // 
-            this.txtBxCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxCuenta.Location = new System.Drawing.Point(395, 268);
-            this.txtBxCuenta.Multiline = true;
-            this.txtBxCuenta.Name = "txtBxCuenta";
-            this.txtBxCuenta.Size = new System.Drawing.Size(270, 28);
-            this.txtBxCuenta.TabIndex = 7;
+            this.txtBxCtaDestino.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxCtaDestino.Location = new System.Drawing.Point(168, 56);
+            this.txtBxCtaDestino.Multiline = true;
+            this.txtBxCtaDestino.Name = "txtBxCtaDestino";
+            this.txtBxCtaDestino.Size = new System.Drawing.Size(180, 27);
+            this.txtBxCtaDestino.TabIndex = 7;
             // 
-            // listBxTpCta
+            // listBxTpCtaDestino
             // 
-            this.listBxTpCta.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBxTpCta.FormattingEnabled = true;
-            this.listBxTpCta.ItemHeight = 23;
-            this.listBxTpCta.Items.AddRange(new object[] {
+            this.listBxTpCtaDestino.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBxTpCtaDestino.FormattingEnabled = true;
+            this.listBxTpCtaDestino.ItemHeight = 16;
+            this.listBxTpCtaDestino.Items.AddRange(new object[] {
             "Cuenta de Ahorros",
             "Cuenta de Credito "});
-            this.listBxTpCta.Location = new System.Drawing.Point(395, 314);
-            this.listBxTpCta.Name = "listBxTpCta";
-            this.listBxTpCta.Size = new System.Drawing.Size(270, 27);
-            this.listBxTpCta.TabIndex = 8;
+            this.listBxTpCtaDestino.Location = new System.Drawing.Point(168, 89);
+            this.listBxTpCtaDestino.Name = "listBxTpCtaDestino";
+            this.listBxTpCtaDestino.Size = new System.Drawing.Size(180, 36);
+            this.listBxTpCtaDestino.TabIndex = 8;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.txtBxIdentDestino);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txtBxCtaDestino);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.listBxTpCtaDestino);
+            this.groupBox1.Location = new System.Drawing.Point(424, 220);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(354, 142);
+            this.groupBox1.TabIndex = 21;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Cuenta Destino";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.txtBxIdentOrigen);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.txtBxCtaOrigen);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.listBxTpCtaOrigen);
+            this.groupBox2.Location = new System.Drawing.Point(12, 220);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(382, 142);
+            this.groupBox2.TabIndex = 22;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Cuenta Origen";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(6, 23);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(181, 27);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Número de identificación";
+            // 
+            // txtBxIdentOrigen
+            // 
+            this.txtBxIdentOrigen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxIdentOrigen.Location = new System.Drawing.Point(193, 23);
+            this.txtBxIdentOrigen.Multiline = true;
+            this.txtBxIdentOrigen.Name = "txtBxIdentOrigen";
+            this.txtBxIdentOrigen.Size = new System.Drawing.Size(180, 27);
+            this.txtBxIdentOrigen.TabIndex = 6;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(6, 56);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(135, 27);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Número de cuenta\r\n";
+            // 
+            // txtBxCtaOrigen
+            // 
+            this.txtBxCtaOrigen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxCtaOrigen.Location = new System.Drawing.Point(193, 56);
+            this.txtBxCtaOrigen.Multiline = true;
+            this.txtBxCtaOrigen.Name = "txtBxCtaOrigen";
+            this.txtBxCtaOrigen.Size = new System.Drawing.Size(180, 27);
+            this.txtBxCtaOrigen.TabIndex = 7;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(6, 89);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(111, 27);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Tipo de cuenta\r\n";
+            // 
+            // listBxTpCtaOrigen
+            // 
+            this.listBxTpCtaOrigen.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBxTpCtaOrigen.FormattingEnabled = true;
+            this.listBxTpCtaOrigen.ItemHeight = 16;
+            this.listBxTpCtaOrigen.Items.AddRange(new object[] {
+            "Cuenta de Ahorros",
+            "Cuenta de Credito "});
+            this.listBxTpCtaOrigen.Location = new System.Drawing.Point(193, 89);
+            this.listBxTpCtaOrigen.Name = "listBxTpCtaOrigen";
+            this.listBxTpCtaOrigen.Size = new System.Drawing.Size(180, 36);
+            this.listBxTpCtaOrigen.TabIndex = 8;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::CajeroAutomatico1.Properties.Resources.Imagenn33;
+            this.pictureBox2.Location = new System.Drawing.Point(400, 220);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(18, 153);
+            this.pictureBox2.TabIndex = 23;
+            this.pictureBox2.TabStop = false;
             // 
             // btnCancelar
             // 
@@ -155,10 +269,10 @@ namespace CajeroAutomatico1.pantallas
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::CajeroAutomatico1.Properties.Resources.Imagen25;
+            this.pictureBox1.Image = global::CajeroAutomatico1.Properties.Resources.Imagenn32;
             this.pictureBox1.Location = new System.Drawing.Point(-2, -2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(802, 192);
+            this.pictureBox1.Size = new System.Drawing.Size(802, 206);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -167,24 +281,25 @@ namespace CajeroAutomatico1.pantallas
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.btnTransferir);
-            this.Controls.Add(this.listBxTpCta);
-            this.Controls.Add(this.txtBxCuenta);
-            this.Controls.Add(this.txtBxIdentificacion);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Transferencia";
             this.Text = "Transferencia";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -194,12 +309,21 @@ namespace CajeroAutomatico1.pantallas
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtBxIdentificacion;
-        private System.Windows.Forms.TextBox txtBxCuenta;
-        private System.Windows.Forms.ListBox listBxTpCta;
+        private System.Windows.Forms.TextBox txtBxIdentDestino;
+        private System.Windows.Forms.TextBox txtBxCtaDestino;
+        private System.Windows.Forms.ListBox listBxTpCtaDestino;
         private System.Windows.Forms.Button btnTransferir;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtBxIdentOrigen;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtBxCtaOrigen;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ListBox listBxTpCtaOrigen;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

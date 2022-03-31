@@ -10,29 +10,29 @@ using System.Windows.Forms;
 
 namespace CajeroAutomatico1.pantallas
 {
-    public partial class Transferencia : Form
+    public partial class CambiarClave : Form
     {
-        public Transferencia()
+        public CambiarClave()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void txtBxIdentOrigen_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void txtBxCtaOrigen_TextChanged(object sender, EventArgs e)
         {
 
         }

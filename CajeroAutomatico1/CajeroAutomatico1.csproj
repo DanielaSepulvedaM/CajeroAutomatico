@@ -58,6 +58,24 @@
     <Compile Include="pantallas\Autenticacion.Designer.cs">
       <DependentUpon>Autenticacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="pantallas\CambiarClave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pantallas\CambiarClave.Designer.cs">
+      <DependentUpon>CambiarClave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pantallas\Desbloquear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pantallas\Desbloquear.Designer.cs">
+      <DependentUpon>Desbloquear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pantallas\GestionarClave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pantallas\GestionarClave.Designer.cs">
+      <DependentUpon>GestionarClave.cs</DependentUpon>
+    </Compile>
     <Compile Include="pantallas\MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +117,15 @@
     <EmbeddedResource Include="pantallas\Autenticacion.resx">
       <DependentUpon>Autenticacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pantallas\CambiarClave.resx">
+      <DependentUpon>CambiarClave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pantallas\Desbloquear.resx">
+      <DependentUpon>Desbloquear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pantallas\GestionarClave.resx">
+      <DependentUpon>GestionarClave.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pantallas\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,18 +146,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -250,6 +277,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Imagenn31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn43.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
