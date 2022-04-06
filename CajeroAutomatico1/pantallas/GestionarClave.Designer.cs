@@ -30,7 +30,7 @@ namespace CajeroAutomatico1.pantallas
         private void InitializeComponent()
         {
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnDesbloClave = new System.Windows.Forms.Button();
+            this.btnDesbloquear = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btnSolicClave = new System.Windows.Forms.Button();
             this.btnCambiarClave = new System.Windows.Forms.Button();
@@ -54,15 +54,16 @@ namespace CajeroAutomatico1.pantallas
             this.pictureBox3.TabIndex = 20;
             this.pictureBox3.TabStop = false;
             // 
-            // btnDesbloClave
+            // btnDesbloquear
             // 
-            this.btnDesbloClave.BackgroundImage = global::CajeroAutomatico1.Properties.Resources.Imagenn37;
-            this.btnDesbloClave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnDesbloClave.Location = new System.Drawing.Point(91, 357);
-            this.btnDesbloClave.Name = "btnDesbloClave";
-            this.btnDesbloClave.Size = new System.Drawing.Size(235, 43);
-            this.btnDesbloClave.TabIndex = 18;
-            this.btnDesbloClave.UseVisualStyleBackColor = true;
+            this.btnDesbloquear.BackgroundImage = global::CajeroAutomatico1.Properties.Resources.Imagenn37;
+            this.btnDesbloquear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnDesbloquear.Location = new System.Drawing.Point(91, 357);
+            this.btnDesbloquear.Name = "btnDesbloquear";
+            this.btnDesbloquear.Size = new System.Drawing.Size(235, 43);
+            this.btnDesbloquear.TabIndex = 18;
+            this.btnDesbloquear.UseVisualStyleBackColor = true;
+            this.btnDesbloquear.Click += new System.EventHandler(this.btnDesbloquear_Click);
             // 
             // pictureBox5
             // 
@@ -83,6 +84,7 @@ namespace CajeroAutomatico1.pantallas
             this.btnSolicClave.Size = new System.Drawing.Size(237, 39);
             this.btnSolicClave.TabIndex = 16;
             this.btnSolicClave.UseVisualStyleBackColor = true;
+            this.btnSolicClave.Click += new System.EventHandler(this.btnSolicClave_Click);
             // 
             // btnCambiarClave
             // 
@@ -93,6 +95,7 @@ namespace CajeroAutomatico1.pantallas
             this.btnCambiarClave.Size = new System.Drawing.Size(237, 39);
             this.btnCambiarClave.TabIndex = 14;
             this.btnCambiarClave.UseVisualStyleBackColor = true;
+            this.btnCambiarClave.Click += new System.EventHandler(this.btnCambiarClave_Click);
             // 
             // pictureBox2
             // 
@@ -128,9 +131,8 @@ namespace CajeroAutomatico1.pantallas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.btnDesbloClave);
+            this.Controls.Add(this.btnDesbloquear);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.btnSolicClave);
             this.Controls.Add(this.btnCambiarClave);
@@ -138,7 +140,7 @@ namespace CajeroAutomatico1.pantallas
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox1);
             this.Name = "GestionarClave";
-            this.Text = "GestionarClave";
+            this.Size = new System.Drawing.Size(800, 450);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -153,7 +155,7 @@ namespace CajeroAutomatico1.pantallas
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button btnDesbloClave;
+        private System.Windows.Forms.Button btnDesbloquear;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button btnSolicClave;
         private System.Windows.Forms.Button btnCambiarClave;

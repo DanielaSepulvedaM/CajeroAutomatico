@@ -126,6 +126,7 @@ namespace CajeroAutomatico1.pantallas
             this.btnCancelar.Size = new System.Drawing.Size(243, 42);
             this.btnCancelar.TabIndex = 28;
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // pictureBox7
             // 
@@ -151,7 +152,6 @@ namespace CajeroAutomatico1.pantallas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnContinuar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.pictureBox7);
@@ -159,7 +159,7 @@ namespace CajeroAutomatico1.pantallas
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Desbloquear";
-            this.Text = "Desbloquear";
+            this.Size = new System.Drawing.Size(800, 450);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

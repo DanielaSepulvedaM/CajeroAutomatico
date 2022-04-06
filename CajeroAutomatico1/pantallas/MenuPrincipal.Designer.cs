@@ -65,7 +65,6 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 7;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // btnConsultas
             // 
@@ -96,7 +95,7 @@
             this.btnRetiros.Size = new System.Drawing.Size(237, 39);
             this.btnRetiros.TabIndex = 2;
             this.btnRetiros.UseVisualStyleBackColor = true;
-            this.btnRetiros.Click += new System.EventHandler(this.button1_Click);
+            this.btnRetiros.Click += new System.EventHandler(this.btnRetiros_Click);
             // 
             // pictureBox2
             // 
@@ -129,7 +128,7 @@
             this.btnTransferencia.Size = new System.Drawing.Size(235, 43);
             this.btnTransferencia.TabIndex = 10;
             this.btnTransferencia.UseVisualStyleBackColor = true;
-            this.btnTransferencia.Click += new System.EventHandler(this.button1_Click_1);
+            this.btnTransferencia.Click += new System.EventHandler(this.btnTransferencia_Click);
             // 
             // btnPagarFactura
             // 
@@ -155,7 +154,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btnPagarFactura);
             this.Controls.Add(this.btnTransferencia);
@@ -167,8 +165,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "MenuPrincipal";
-            this.Text = "MenuPrincipal";
-            this.Load += new System.EventHandler(this.MenuPrincipal_Load);
+            this.Size = new System.Drawing.Size(800, 450);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

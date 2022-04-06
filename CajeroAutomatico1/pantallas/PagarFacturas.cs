@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace CajeroAutomatico1.pantallas
 {
-    public partial class PagarFacturas : Form
+    public partial class PagarFacturas : UserControl
     {
         public PagarFacturas()
         {

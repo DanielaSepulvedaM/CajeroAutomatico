@@ -1,7 +1,7 @@
 ﻿
 namespace CajeroAutomatico1
 {
-    partial class Form1
+    partial class Shell
     {
         /// <summary>
         /// Variable del diseñador necesaria.

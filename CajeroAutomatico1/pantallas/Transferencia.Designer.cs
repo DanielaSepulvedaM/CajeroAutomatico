@@ -66,7 +66,6 @@ namespace CajeroAutomatico1.pantallas
             this.label1.Size = new System.Drawing.Size(157, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "Número de identificación";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -77,7 +76,6 @@ namespace CajeroAutomatico1.pantallas
             this.label2.Size = new System.Drawing.Size(119, 23);
             this.label2.TabIndex = 2;
             this.label2.Text = "Número de cuenta\r\n";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -88,7 +86,6 @@ namespace CajeroAutomatico1.pantallas
             this.label3.Size = new System.Drawing.Size(97, 23);
             this.label3.TabIndex = 5;
             this.label3.Text = "Tipo de cuenta\r\n";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtBxIdentDestino
             // 

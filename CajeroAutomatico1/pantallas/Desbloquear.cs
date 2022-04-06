@@ -10,11 +10,20 @@ using System.Windows.Forms;
 
 namespace CajeroAutomatico1.pantallas
 {
-    public partial class Desbloquear : Form
+    public partial class Desbloquear : UserControl
     {
-        public Desbloquear()
+        private readonly Shell shell;
+
+        public Desbloquear(Shell shell)
         {
             InitializeComponent();
+            this.shell = shell;
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            var frm = new GestionarClave(shell);
+            shell.Mostrar(frm);
         }
     }
 }

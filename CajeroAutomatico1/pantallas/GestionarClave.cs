@@ -1,20 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CajeroAutomatico1.pantallas
 {
-    public partial class GestionarClave : Form
+    public partial class GestionarClave : UserControl
     {
-        public GestionarClave()
+        private readonly Shell shell;
+
+        public GestionarClave(Shell shell)
         {
             InitializeComponent();
+            this.shell = shell;
+        }
+
+        private void btnCambiarClave_Click(object sender, EventArgs e)
+        {
+            var frm = new CambiarClave(shell);
+            shell.Mostrar(frm);
+        }
+
+        private void btnSolicClave_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnDesbloquear_Click(object sender, EventArgs e)
+        {
+            var frm = new Desbloquear(shell);
+            shell.Mostrar(frm);
         }
     }
 }

@@ -10,36 +10,26 @@ using System.Windows.Forms;
 
 namespace CajeroAutomatico1.pantallas
 {
-    public partial class Autenticacion : Form
+    public partial class Autenticacion : UserControl
     {
-        public Autenticacion()
+        private readonly Shell shell;
+
+        public Autenticacion(Shell shell)
         {
             InitializeComponent();
+            this.shell = shell;
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnIngresar_Click(object sender, EventArgs e)
         {
-
+            var frm = new MenuPrincipal(shell);
+            this.shell.Mostrar(frm);
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void btnGestionarClave_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-
+            var frm = new GestionarClave(shell);
+            this.shell.Mostrar(frm);
         }
     }
 }

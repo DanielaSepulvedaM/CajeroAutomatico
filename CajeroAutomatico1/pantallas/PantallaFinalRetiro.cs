@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace CajeroAutomatico1.pantallas
 {
-    public partial class PantallaFinalRetiro : Form
+    public partial class PantallaFinalRetiro : UserControl
     {
         public PantallaFinalRetiro()
         {

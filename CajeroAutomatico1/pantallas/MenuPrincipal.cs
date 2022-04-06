@@ -10,31 +10,26 @@ using System.Windows.Forms;
 
 namespace CajeroAutomatico1.pantallas
 {
-    public partial class MenuPrincipal : Form
+    public partial class MenuPrincipal : UserControl
     {
-        public MenuPrincipal()
+        private readonly Shell shell;
+
+        public MenuPrincipal(Shell shell)
         {
             InitializeComponent();
+            this.shell = shell;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnRetiros_Click(object sender, EventArgs e)
         {
-
+            var frm = new Retiros(shell);
+            shell.Mostrar(frm);
         }
 
-        private void MenuPrincipal_Load(object sender, EventArgs e)
+        private void btnTransferencia_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-
+            var frm = new Transferencia(shell);
+            shell.Mostrar(frm);
         }
     }
 }

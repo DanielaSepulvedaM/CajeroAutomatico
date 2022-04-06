@@ -10,31 +10,14 @@ using System.Windows.Forms;
 
 namespace CajeroAutomatico1.pantallas
 {
-    public partial class Transferencia : Form
+    public partial class Transferencia : UserControl
     {
-        public Transferencia()
+        private readonly Shell shell;
+
+        public Transferencia(Shell shell)
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
+            this.shell = shell;
         }
     }
 }

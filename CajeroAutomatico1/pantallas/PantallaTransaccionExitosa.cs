@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace CajeroAutomatico1.pantallas
 {
-    public partial class PantallaTransaccionExitosa : Form
+    public partial class PantallaTransaccionExitosa : UserControl
     {
         public PantallaTransaccionExitosa()
         {

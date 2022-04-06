@@ -10,29 +10,23 @@ using System.Windows.Forms;
 
 namespace CajeroAutomatico1.pantallas
 {
-    public partial class CambiarClave : Form
+    public partial class CambiarClave : UserControl
     {
-        public CambiarClave()
+        private readonly Shell shell;
+
+        public CambiarClave(Shell shell)
         {
             InitializeComponent();
+            this.shell = shell;
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
-
+            var frm = new GestionarClave(shell);
+            shell.Mostrar(frm);
         }
 
-        private void txtBxIdentOrigen_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtBxCtaOrigen_TextChanged(object sender, EventArgs e)
+        private void btnContinuar_Click(object sender, EventArgs e)
         {
 
         }

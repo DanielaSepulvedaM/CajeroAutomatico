@@ -30,11 +30,11 @@ namespace CajeroAutomatico1.pantallas
         private void InitializeComponent()
         {
             this.label4 = new System.Windows.Forms.Label();
-            this.txtBxClaveActual = new System.Windows.Forms.TextBox();
+            this.txtClaveActual = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtBxClaveNueva = new System.Windows.Forms.TextBox();
+            this.txtClaveNueva = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtBxClaveNuevaConf = new System.Windows.Forms.TextBox();
+            this.txtClaveNuevaConf = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnContinuar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -56,17 +56,15 @@ namespace CajeroAutomatico1.pantallas
             this.label4.Size = new System.Drawing.Size(98, 27);
             this.label4.TabIndex = 8;
             this.label4.Text = "Clave Actual ";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // txtBxClaveActual
+            // txtClaveActual
             // 
-            this.txtBxClaveActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxClaveActual.Location = new System.Drawing.Point(193, 25);
-            this.txtBxClaveActual.Multiline = true;
-            this.txtBxClaveActual.Name = "txtBxClaveActual";
-            this.txtBxClaveActual.Size = new System.Drawing.Size(160, 27);
-            this.txtBxClaveActual.TabIndex = 10;
-            this.txtBxClaveActual.TextChanged += new System.EventHandler(this.txtBxIdentOrigen_TextChanged);
+            this.txtClaveActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtClaveActual.Location = new System.Drawing.Point(193, 25);
+            this.txtClaveActual.Multiline = true;
+            this.txtClaveActual.Name = "txtClaveActual";
+            this.txtClaveActual.Size = new System.Drawing.Size(160, 27);
+            this.txtClaveActual.TabIndex = 10;
             // 
             // label5
             // 
@@ -77,17 +75,15 @@ namespace CajeroAutomatico1.pantallas
             this.label5.Size = new System.Drawing.Size(94, 27);
             this.label5.TabIndex = 9;
             this.label5.Text = "Clave Nueva";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // txtBxClaveNueva
+            // txtClaveNueva
             // 
-            this.txtBxClaveNueva.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxClaveNueva.Location = new System.Drawing.Point(193, 58);
-            this.txtBxClaveNueva.Multiline = true;
-            this.txtBxClaveNueva.Name = "txtBxClaveNueva";
-            this.txtBxClaveNueva.Size = new System.Drawing.Size(160, 27);
-            this.txtBxClaveNueva.TabIndex = 11;
-            this.txtBxClaveNueva.TextChanged += new System.EventHandler(this.txtBxCtaOrigen_TextChanged);
+            this.txtClaveNueva.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtClaveNueva.Location = new System.Drawing.Point(193, 58);
+            this.txtClaveNueva.Multiline = true;
+            this.txtClaveNueva.Name = "txtClaveNueva";
+            this.txtClaveNueva.Size = new System.Drawing.Size(160, 27);
+            this.txtClaveNueva.TabIndex = 11;
             // 
             // label1
             // 
@@ -99,23 +95,23 @@ namespace CajeroAutomatico1.pantallas
             this.label1.TabIndex = 12;
             this.label1.Text = "Confirmar Clave Nueva\r\n";
             // 
-            // txtBxClaveNuevaConf
+            // txtClaveNuevaConf
             // 
-            this.txtBxClaveNuevaConf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxClaveNuevaConf.Location = new System.Drawing.Point(193, 91);
-            this.txtBxClaveNuevaConf.Multiline = true;
-            this.txtBxClaveNuevaConf.Name = "txtBxClaveNuevaConf";
-            this.txtBxClaveNuevaConf.Size = new System.Drawing.Size(160, 27);
-            this.txtBxClaveNuevaConf.TabIndex = 13;
+            this.txtClaveNuevaConf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtClaveNuevaConf.Location = new System.Drawing.Point(193, 91);
+            this.txtClaveNuevaConf.Multiline = true;
+            this.txtClaveNuevaConf.Name = "txtClaveNuevaConf";
+            this.txtClaveNuevaConf.Size = new System.Drawing.Size(160, 27);
+            this.txtClaveNuevaConf.TabIndex = 13;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txtBxClaveNueva);
-            this.groupBox1.Controls.Add(this.txtBxClaveNuevaConf);
+            this.groupBox1.Controls.Add(this.txtClaveNueva);
+            this.groupBox1.Controls.Add(this.txtClaveNuevaConf);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.txtBxClaveActual);
+            this.groupBox1.Controls.Add(this.txtClaveActual);
             this.groupBox1.Location = new System.Drawing.Point(210, 222);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(374, 133);
@@ -131,6 +127,7 @@ namespace CajeroAutomatico1.pantallas
             this.btnContinuar.Size = new System.Drawing.Size(243, 42);
             this.btnContinuar.TabIndex = 25;
             this.btnContinuar.UseVisualStyleBackColor = true;
+            this.btnContinuar.Click += new System.EventHandler(this.btnContinuar_Click);
             // 
             // btnCancelar
             // 
@@ -144,6 +141,7 @@ namespace CajeroAutomatico1.pantallas
             this.btnCancelar.Size = new System.Drawing.Size(243, 42);
             this.btnCancelar.TabIndex = 24;
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // pictureBox7
             // 
@@ -178,7 +176,6 @@ namespace CajeroAutomatico1.pantallas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnContinuar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.pictureBox7);
@@ -186,7 +183,7 @@ namespace CajeroAutomatico1.pantallas
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "CambiarClave";
-            this.Text = "CambiarClave";
+            this.Size = new System.Drawing.Size(800, 450);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -200,11 +197,11 @@ namespace CajeroAutomatico1.pantallas
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtBxClaveActual;
+        private System.Windows.Forms.TextBox txtClaveActual;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtBxClaveNueva;
+        private System.Windows.Forms.TextBox txtClaveNueva;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtBxClaveNuevaConf;
+        private System.Windows.Forms.TextBox txtClaveNuevaConf;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.PictureBox pictureBox7;

@@ -34,8 +34,8 @@ namespace CajeroAutomatico1.pantallas
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnTransferir = new System.Windows.Forms.Button();
+            this.btnGestionarClave = new System.Windows.Forms.Button();
+            this.btnIngresar = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -58,7 +58,6 @@ namespace CajeroAutomatico1.pantallas
             this.label1.Size = new System.Drawing.Size(171, 31);
             this.label1.TabIndex = 3;
             this.label1.Text = "Bienvenido/a";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -82,7 +81,6 @@ namespace CajeroAutomatico1.pantallas
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(271, 49);
             this.textBox1.TabIndex = 5;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -95,33 +93,34 @@ namespace CajeroAutomatico1.pantallas
             this.label3.Size = new System.Drawing.Size(266, 19);
             this.label3.TabIndex = 7;
             this.label3.Text = "*Digite la clave asignada por el banco ";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // button1
+            // btnGestionarClave
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::CajeroAutomatico1.Properties.Resources.Imagenn35;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(473, 390);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(227, 49);
-            this.button1.TabIndex = 18;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnGestionarClave.BackColor = System.Drawing.Color.Transparent;
+            this.btnGestionarClave.BackgroundImage = global::CajeroAutomatico1.Properties.Resources.Imagenn35;
+            this.btnGestionarClave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGestionarClave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGestionarClave.ForeColor = System.Drawing.Color.White;
+            this.btnGestionarClave.Location = new System.Drawing.Point(473, 390);
+            this.btnGestionarClave.Name = "btnGestionarClave";
+            this.btnGestionarClave.Size = new System.Drawing.Size(227, 49);
+            this.btnGestionarClave.TabIndex = 18;
+            this.btnGestionarClave.UseVisualStyleBackColor = false;
+            this.btnGestionarClave.Click += new System.EventHandler(this.btnGestionarClave_Click);
             // 
-            // btnTransferir
+            // btnIngresar
             // 
-            this.btnTransferir.BackColor = System.Drawing.Color.Transparent;
-            this.btnTransferir.BackgroundImage = global::CajeroAutomatico1.Properties.Resources.Imagenn34;
-            this.btnTransferir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTransferir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTransferir.ForeColor = System.Drawing.Color.White;
-            this.btnTransferir.Location = new System.Drawing.Point(473, 319);
-            this.btnTransferir.Name = "btnTransferir";
-            this.btnTransferir.Size = new System.Drawing.Size(227, 49);
-            this.btnTransferir.TabIndex = 17;
-            this.btnTransferir.UseVisualStyleBackColor = false;
+            this.btnIngresar.BackColor = System.Drawing.Color.Transparent;
+            this.btnIngresar.BackgroundImage = global::CajeroAutomatico1.Properties.Resources.Imagenn34;
+            this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresar.ForeColor = System.Drawing.Color.White;
+            this.btnIngresar.Location = new System.Drawing.Point(473, 319);
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.Size = new System.Drawing.Size(227, 49);
+            this.btnIngresar.TabIndex = 17;
+            this.btnIngresar.UseVisualStyleBackColor = false;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // pictureBox7
             // 
@@ -149,7 +148,6 @@ namespace CajeroAutomatico1.pantallas
             this.pictureBox5.Size = new System.Drawing.Size(271, 73);
             this.pictureBox5.TabIndex = 8;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox4
             // 
@@ -175,10 +173,9 @@ namespace CajeroAutomatico1.pantallas
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 482);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnTransferir);
+            this.Controls.Add(this.btnGestionarClave);
+            this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
@@ -187,10 +184,8 @@ namespace CajeroAutomatico1.pantallas
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.HelpButton = true;
             this.Name = "Autenticacion";
-            this.Text = "Autenticacion";
+            this.Size = new System.Drawing.Size(800, 482);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -210,8 +205,8 @@ namespace CajeroAutomatico1.pantallas
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Button btnTransferir;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnIngresar;
+        private System.Windows.Forms.Button btnGestionarClave;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

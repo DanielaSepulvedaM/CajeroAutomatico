@@ -10,11 +10,14 @@ using System.Windows.Forms;
 
 namespace CajeroAutomatico1.pantallas
 {
-    public partial class Retiros : Form
+    public partial class Retiros : UserControl
     {
-        public Retiros()
+        private readonly Shell shell;
+
+        public Retiros(Shell shell)
         {
             InitializeComponent();
+            this.shell = shell;
         }
 
         private void button6_Click(object sender, EventArgs e)
