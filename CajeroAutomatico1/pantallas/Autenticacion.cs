@@ -31,5 +31,10 @@ namespace CajeroAutomatico1.pantallas
             var frm = new GestionarClave(shell);
             this.shell.Mostrar(frm);
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

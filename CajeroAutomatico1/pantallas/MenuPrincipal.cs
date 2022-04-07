@@ -31,5 +31,10 @@ namespace CajeroAutomatico1.pantallas
             var frm = new Transferencia(shell);
             shell.Mostrar(frm);
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

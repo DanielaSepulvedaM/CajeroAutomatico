@@ -65,6 +65,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="pantallas\ConfirmacionRetiro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pantallas\ConfirmacionRetiro.Designer.cs">
+      <DependentUpon>ConfirmacionRetiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pantallas\PantallaSemiFinalPagoFactura.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pantallas\PantallaSemiFinalPagoFactura.Designer.cs">
+      <DependentUpon>PantallaSemiFinalPagoFactura.cs</DependentUpon>
+    </Compile>
     <Compile Include="Shell.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +151,9 @@
     <EmbeddedResource Include="pantallas\CambiarClave.resx">
       <DependentUpon>CambiarClave.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pantallas\ConfirmacionRetiro.resx">
+      <DependentUpon>ConfirmacionRetiro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pantallas\Desbloquear.resx">
       <DependentUpon>Desbloquear.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pantallas\PantallaFinalRetiro.resx">
       <DependentUpon>PantallaFinalRetiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pantallas\PantallaSemiFinalPagoFactura.resx">
+      <DependentUpon>PantallaSemiFinalPagoFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pantallas\PantallaTransaccionExitosa.resx">
       <DependentUpon>PantallaTransaccionExitosa.cs</DependentUpon>
@@ -336,6 +354,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Imagenn43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn47.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
