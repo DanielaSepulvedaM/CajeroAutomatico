@@ -164,6 +164,7 @@ namespace CajeroAutomatico1.pantallas
             this.btnCancelar.Size = new System.Drawing.Size(251, 47);
             this.btnCancelar.TabIndex = 28;
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // pictureBox10
             // 
@@ -199,6 +200,7 @@ namespace CajeroAutomatico1.pantallas
             this.btnVlr1.Name = "btnVlr1";
             this.btnVlr1.Size = new System.Drawing.Size(251, 43);
             this.btnVlr1.TabIndex = 26;
+            this.btnVlr1.Tag = "20000";
             this.btnVlr1.UseVisualStyleBackColor = true;
             // 
             // btnSumaDiferente
@@ -209,6 +211,7 @@ namespace CajeroAutomatico1.pantallas
             this.btnSumaDiferente.Size = new System.Drawing.Size(260, 43);
             this.btnSumaDiferente.TabIndex = 25;
             this.btnSumaDiferente.UseVisualStyleBackColor = true;
+            this.btnSumaDiferente.Click += new System.EventHandler(this.btnSumaDiferente_Click);
             // 
             // btnVlr7
             // 
@@ -217,6 +220,7 @@ namespace CajeroAutomatico1.pantallas
             this.btnVlr7.Name = "btnVlr7";
             this.btnVlr7.Size = new System.Drawing.Size(260, 43);
             this.btnVlr7.TabIndex = 24;
+            this.btnVlr7.Tag = "720000";
             this.btnVlr7.UseVisualStyleBackColor = true;
             // 
             // btnVlr6
@@ -226,6 +230,7 @@ namespace CajeroAutomatico1.pantallas
             this.btnVlr6.Name = "btnVlr6";
             this.btnVlr6.Size = new System.Drawing.Size(260, 43);
             this.btnVlr6.TabIndex = 23;
+            this.btnVlr6.Tag = "520000";
             this.btnVlr6.UseVisualStyleBackColor = true;
             // 
             // btnVlr5
@@ -235,6 +240,7 @@ namespace CajeroAutomatico1.pantallas
             this.btnVlr5.Name = "btnVlr5";
             this.btnVlr5.Size = new System.Drawing.Size(260, 43);
             this.btnVlr5.TabIndex = 22;
+            this.btnVlr5.Tag = "320000";
             this.btnVlr5.UseVisualStyleBackColor = true;
             // 
             // btnVlr4
@@ -244,6 +250,7 @@ namespace CajeroAutomatico1.pantallas
             this.btnVlr4.Name = "btnVlr4";
             this.btnVlr4.Size = new System.Drawing.Size(251, 43);
             this.btnVlr4.TabIndex = 21;
+            this.btnVlr4.Tag = "120000";
             this.btnVlr4.UseVisualStyleBackColor = true;
             // 
             // btnVlr3
@@ -253,6 +260,7 @@ namespace CajeroAutomatico1.pantallas
             this.btnVlr3.Name = "btnVlr3";
             this.btnVlr3.Size = new System.Drawing.Size(251, 43);
             this.btnVlr3.TabIndex = 20;
+            this.btnVlr3.Tag = "80000";
             this.btnVlr3.UseVisualStyleBackColor = true;
             // 
             // btnVlr2
@@ -262,6 +270,7 @@ namespace CajeroAutomatico1.pantallas
             this.btnVlr2.Name = "btnVlr2";
             this.btnVlr2.Size = new System.Drawing.Size(251, 43);
             this.btnVlr2.TabIndex = 19;
+            this.btnVlr2.Tag = "40000";
             this.btnVlr2.UseVisualStyleBackColor = true;
             // 
             // Retiros

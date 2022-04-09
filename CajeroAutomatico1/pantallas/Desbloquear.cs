@@ -22,8 +22,7 @@ namespace CajeroAutomatico1.pantallas
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            var frm = new GestionarClave(shell);
-            shell.Mostrar(frm);
+            shell.NavegarA("GestionarClave");
         }
     }
 }

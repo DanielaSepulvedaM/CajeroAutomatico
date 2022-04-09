@@ -34,9 +34,12 @@ namespace CajeroAutomatico1.pantallas
             this.lblCostoTransaccion = new System.Windows.Forms.Label();
             this.lblTotalRetiro = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnContinuar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -88,33 +91,57 @@ namespace CajeroAutomatico1.pantallas
             this.pictureBox8.TabIndex = 31;
             this.pictureBox8.TabStop = false;
             // 
-            // btnSalir
+            // btnContinuar
             // 
-            this.btnSalir.BackColor = System.Drawing.Color.Transparent;
-            this.btnSalir.BackgroundImage = global::CajeroAutomatico1.Properties.Resources.Imagenn45;
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(97, 366);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(243, 42);
-            this.btnSalir.TabIndex = 30;
-            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnContinuar.BackgroundImage = global::CajeroAutomatico1.Properties.Resources.Imagenn42;
+            this.btnContinuar.Location = new System.Drawing.Point(463, 365);
+            this.btnContinuar.Name = "btnContinuar";
+            this.btnContinuar.Size = new System.Drawing.Size(243, 42);
+            this.btnContinuar.TabIndex = 32;
+            this.btnContinuar.UseVisualStyleBackColor = true;
+            this.btnContinuar.Click += new System.EventHandler(this.btnContinuar_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancelar.BackgroundImage = global::CajeroAutomatico1.Properties.Resources.Imagenn25;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.ForeColor = System.Drawing.Color.White;
+            this.btnCancelar.Location = new System.Drawing.Point(84, 365);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(243, 42);
+            this.btnCancelar.TabIndex = 33;
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::CajeroAutomatico1.Properties.Resources.Imagen9;
+            this.pictureBox7.Location = new System.Drawing.Point(712, 365);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(41, 42);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 34;
+            this.pictureBox7.TabStop = false;
             // 
             // ConfirmacionRetiro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnContinuar);
             this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.lblTotalRetiro);
             this.Controls.Add(this.lblCostoTransaccion);
             this.Controls.Add(this.lblVlrRetirado);
             this.Controls.Add(this.pictureBox1);
             this.Name = "ConfirmacionRetiro";
-            this.Size = new System.Drawing.Size(985, 560);
+            this.Size = new System.Drawing.Size(788, 420);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -126,6 +153,8 @@ namespace CajeroAutomatico1.pantallas
         private System.Windows.Forms.Label lblCostoTransaccion;
         private System.Windows.Forms.Label lblTotalRetiro;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnContinuar;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }

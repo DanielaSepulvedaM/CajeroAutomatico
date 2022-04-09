@@ -22,19 +22,35 @@ namespace CajeroAutomatico1.pantallas
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            var frm = new MenuPrincipal(shell);
-            this.shell.Mostrar(frm);
+            var clienteId = txtBxIdentificacionAcceso.Text;
+            var clave = txtBxClave.Text;
+
+            if (string.IsNullOrEmpty(clienteId) || string.IsNullOrEmpty(clave))
+            {
+                MessageBox.Show("Debe ingresar la identificacion del cliente y una contraseña válida");
+                return;
+            }
+
+            var c = shell.ClienteRep.Autenticar(clienteId, int.Parse(clave));
+
+            if (c is null)
+                MessageBox.Show("Identificacion o clave no valida");
+            else
+            {
+                this.shell.Context.Add("cliente", c);
+                this.shell.NavegarA("menuprincipal");
+            }   
         }
 
         private void btnGestionarClave_Click(object sender, EventArgs e)
         {
-            var frm = new GestionarClave(shell);
-            this.shell.Mostrar(frm);
+            this.shell.NavegarA("gestionarclave");
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void txtBxClave_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                e.Handled = true;
         }
     }
 }

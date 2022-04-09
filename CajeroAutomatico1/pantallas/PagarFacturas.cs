@@ -12,7 +12,7 @@ namespace CajeroAutomatico1.pantallas
 {
     public partial class PagarFacturas : UserControl
     {
-        public PagarFacturas()
+        public PagarFacturas(Shell shell)
         {
             InitializeComponent();
         }

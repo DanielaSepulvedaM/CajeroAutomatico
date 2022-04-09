@@ -37,12 +37,12 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -77,6 +77,7 @@
             this.btnPagarFactura.Size = new System.Drawing.Size(237, 43);
             this.btnPagarFactura.TabIndex = 17;
             this.btnPagarFactura.UseVisualStyleBackColor = true;
+            this.btnPagarFactura.Click += new System.EventHandler(this.btnPagarFactura_Click);
             // 
             // btnConsultas
             // 
@@ -87,6 +88,7 @@
             this.btnConsultas.Size = new System.Drawing.Size(237, 39);
             this.btnConsultas.TabIndex = 16;
             this.btnConsultas.UseVisualStyleBackColor = true;
+            this.btnConsultas.Click += new System.EventHandler(this.btnConsultas_Click);
             // 
             // btnRetiros
             // 
@@ -119,6 +121,7 @@
             this.btnCambiarClave.Size = new System.Drawing.Size(237, 39);
             this.btnCambiarClave.TabIndex = 15;
             this.btnCambiarClave.UseVisualStyleBackColor = true;
+            this.btnCambiarClave.Click += new System.EventHandler(this.btnCambiarClave_Click);
             // 
             // pictureBox8
             // 
@@ -150,19 +153,6 @@
             this.pictureBox3.TabIndex = 27;
             this.pictureBox3.TabStop = false;
             // 
-            // btnSalir
-            // 
-            this.btnSalir.BackColor = System.Drawing.Color.Transparent;
-            this.btnSalir.BackgroundImage = global::CajeroAutomatico1.Properties.Resources.Imagenn45;
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(104, 406);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(243, 42);
-            this.btnSalir.TabIndex = 26;
-            this.btnSalir.UseVisualStyleBackColor = false;
-            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::CajeroAutomatico1.Properties.Resources.Imagen12;
@@ -192,7 +182,6 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 7;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox2
             // 
@@ -216,15 +205,28 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancelar.BackgroundImage = global::CajeroAutomatico1.Properties.Resources.Imagenn25;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.ForeColor = System.Drawing.Color.White;
+            this.btnCancelar.Location = new System.Drawing.Point(122, 406);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(243, 42);
+            this.btnCancelar.TabIndex = 31;
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
@@ -252,7 +254,6 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Button btnTransferencia;
         private System.Windows.Forms.Button btnCambiarClave;
-        private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -262,5 +263,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnPagarFactura;
         private System.Windows.Forms.Button btnConsultas;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

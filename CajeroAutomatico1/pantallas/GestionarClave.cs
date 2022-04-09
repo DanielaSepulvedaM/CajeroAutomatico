@@ -15,8 +15,7 @@ namespace CajeroAutomatico1.pantallas
 
         private void btnCambiarClave_Click(object sender, EventArgs e)
         {
-            var frm = new CambiarClave(shell);
-            shell.Mostrar(frm);
+            shell.NavegarA("CambiarClave");
         }
 
         private void btnSolicClave_Click(object sender, EventArgs e)
@@ -26,8 +25,12 @@ namespace CajeroAutomatico1.pantallas
 
         private void btnDesbloquear_Click(object sender, EventArgs e)
         {
-            var frm = new Desbloquear(shell);
-            shell.Mostrar(frm);
+            shell.NavegarA("Desbloquear");
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            shell.NavegarA("autenticacion");
         }
     }
 }

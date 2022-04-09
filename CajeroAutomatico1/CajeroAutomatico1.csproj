@@ -54,6 +54,7 @@
     <Reference Include="System.Data.SQLite.Linq, Version=1.0.115.5, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.SQLite.Linq.1.0.115.5\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -65,11 +66,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dominio\Cliente.cs" />
+    <Compile Include="Dominio\Cuenta.cs" />
+    <Compile Include="Dominio\Transaccion.cs" />
+    <Compile Include="Interfaces\IBaseDeDatos.cs" />
+    <Compile Include="Infraestructura\DbMoq.cs" />
     <Compile Include="pantallas\ConfirmacionRetiro.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="pantallas\ConfirmacionRetiro.Designer.cs">
       <DependentUpon>ConfirmacionRetiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pantallas\Error.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pantallas\Error.Designer.cs">
+      <DependentUpon>Error.cs</DependentUpon>
     </Compile>
     <Compile Include="pantallas\PantallaSemiFinalPagoFactura.cs">
       <SubType>UserControl</SubType>
@@ -77,6 +89,8 @@
     <Compile Include="pantallas\PantallaSemiFinalPagoFactura.Designer.cs">
       <DependentUpon>PantallaSemiFinalPagoFactura.cs</DependentUpon>
     </Compile>
+    <Compile Include="Repositorio\ClienteRep.cs" />
+    <Compile Include="Repositorio\TransaccionRep.cs" />
     <Compile Include="Shell.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pantallas\Desbloquear.resx">
       <DependentUpon>Desbloquear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pantallas\Error.resx">
+      <DependentUpon>Error.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pantallas\GestionarClave.resx">
       <DependentUpon>GestionarClave.cs</DependentUpon>
@@ -364,6 +381,7 @@
   <ItemGroup>
     <None Include="Resources\Imagenn47.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

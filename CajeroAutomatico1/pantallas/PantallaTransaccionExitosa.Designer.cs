@@ -55,16 +55,16 @@ namespace CajeroAutomatico1.pantallas
             this.btnRegresar.Size = new System.Drawing.Size(230, 46);
             this.btnRegresar.TabIndex = 11;
             this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
-            // PantallaFinalTransferencia
+            // PantallaTransaccionExitosa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "PantallaFinalTransferencia";
-            this.Text = "PantallaFinalTransferencia";
+            this.Name = "PantallaTransaccionExitosa";
+            this.Size = new System.Drawing.Size(800, 450);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

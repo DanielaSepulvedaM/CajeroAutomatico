@@ -12,7 +12,7 @@ namespace CajeroAutomatico1.pantallas
 {
     public partial class PantallaSemiFinalPagoFactura : UserControl
     {
-        public PantallaSemiFinalPagoFactura()
+        public PantallaSemiFinalPagoFactura(Shell shell)
         {
             InitializeComponent();
         }

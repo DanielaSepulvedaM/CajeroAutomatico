@@ -159,10 +159,13 @@ namespace CajeroAutomatico1.pantallas
             this.txtBxClave.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBxClave.ForeColor = System.Drawing.Color.Red;
             this.txtBxClave.Location = new System.Drawing.Point(88, 378);
+            this.txtBxClave.MaxLength = 4;
             this.txtBxClave.Multiline = true;
             this.txtBxClave.Name = "txtBxClave";
+            this.txtBxClave.PasswordChar = '*';
             this.txtBxClave.Size = new System.Drawing.Size(262, 36);
             this.txtBxClave.TabIndex = 22;
+            this.txtBxClave.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBxClave_KeyPress);
             // 
             // label4
             // 
@@ -175,7 +178,6 @@ namespace CajeroAutomatico1.pantallas
             this.label4.Size = new System.Drawing.Size(242, 19);
             this.label4.TabIndex = 23;
             this.label4.Text = "*Digite el numero de identificacion";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // pictureBox4
             // 

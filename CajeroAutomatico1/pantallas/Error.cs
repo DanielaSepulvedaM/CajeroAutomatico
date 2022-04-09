@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace CajeroAutomatico1.pantallas
 {
-    public partial class PantallaFinalRetiro : UserControl
+    public partial class Error : UserControl
     {
-        private readonly Shell shell;
-
-        public PantallaFinalRetiro(Shell shell)
+        public Error(Shell shell)
         {
             InitializeComponent();
-            this.shell = shell;
-        }
-
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            shell.NavegarA("autenticacion");
         }
     }
 }

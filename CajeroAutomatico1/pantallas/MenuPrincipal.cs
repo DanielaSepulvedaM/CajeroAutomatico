@@ -22,19 +22,32 @@ namespace CajeroAutomatico1.pantallas
 
         private void btnRetiros_Click(object sender, EventArgs e)
         {
-            var frm = new Retiros(shell);
-            shell.Mostrar(frm);
+            shell.NavegarA("retiro");
         }
 
         private void btnTransferencia_Click(object sender, EventArgs e)
         {
-            var frm = new Transferencia(shell);
-            shell.Mostrar(frm);
+            shell.NavegarA("transferencia");
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            shell.NavegarA("autenticacion");
+        }
+
+        private void btnConsultas_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnPagarFactura_Click(object sender, EventArgs e)
+        {
+            shell.NavegarA("pagarfactura");
+        }
+
+        private void btnCambiarClave_Click(object sender, EventArgs e)
+        {
+            shell.NavegarA("cambiarclave");
         }
     }
 }

@@ -36,11 +36,11 @@ namespace CajeroAutomatico1.pantallas
             this.label1 = new System.Windows.Forms.Label();
             this.txtClaveNuevaConf = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnContinuar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnContinuar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -61,8 +61,10 @@ namespace CajeroAutomatico1.pantallas
             // 
             this.txtClaveActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtClaveActual.Location = new System.Drawing.Point(193, 25);
+            this.txtClaveActual.MaxLength = 4;
             this.txtClaveActual.Multiline = true;
             this.txtClaveActual.Name = "txtClaveActual";
+            this.txtClaveActual.PasswordChar = '*';
             this.txtClaveActual.Size = new System.Drawing.Size(160, 27);
             this.txtClaveActual.TabIndex = 10;
             // 
@@ -80,8 +82,10 @@ namespace CajeroAutomatico1.pantallas
             // 
             this.txtClaveNueva.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtClaveNueva.Location = new System.Drawing.Point(193, 58);
+            this.txtClaveNueva.MaxLength = 4;
             this.txtClaveNueva.Multiline = true;
             this.txtClaveNueva.Name = "txtClaveNueva";
+            this.txtClaveNueva.PasswordChar = '*';
             this.txtClaveNueva.Size = new System.Drawing.Size(160, 27);
             this.txtClaveNueva.TabIndex = 11;
             // 
@@ -99,8 +103,10 @@ namespace CajeroAutomatico1.pantallas
             // 
             this.txtClaveNuevaConf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtClaveNuevaConf.Location = new System.Drawing.Point(193, 91);
+            this.txtClaveNuevaConf.MaxLength = 4;
             this.txtClaveNuevaConf.Multiline = true;
             this.txtClaveNuevaConf.Name = "txtClaveNuevaConf";
+            this.txtClaveNuevaConf.PasswordChar = '*';
             this.txtClaveNuevaConf.Size = new System.Drawing.Size(160, 27);
             this.txtClaveNuevaConf.TabIndex = 13;
             // 
@@ -118,16 +124,6 @@ namespace CajeroAutomatico1.pantallas
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cambiar Clave";
-            // 
-            // btnContinuar
-            // 
-            this.btnContinuar.BackgroundImage = global::CajeroAutomatico1.Properties.Resources.Imagenn42;
-            this.btnContinuar.Location = new System.Drawing.Point(465, 385);
-            this.btnContinuar.Name = "btnContinuar";
-            this.btnContinuar.Size = new System.Drawing.Size(243, 42);
-            this.btnContinuar.TabIndex = 25;
-            this.btnContinuar.UseVisualStyleBackColor = true;
-            this.btnContinuar.Click += new System.EventHandler(this.btnContinuar_Click);
             // 
             // btnCancelar
             // 
@@ -171,6 +167,16 @@ namespace CajeroAutomatico1.pantallas
             this.pictureBox1.Size = new System.Drawing.Size(801, 209);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnContinuar
+            // 
+            this.btnContinuar.BackgroundImage = global::CajeroAutomatico1.Properties.Resources.Imagenn42;
+            this.btnContinuar.Location = new System.Drawing.Point(465, 385);
+            this.btnContinuar.Name = "btnContinuar";
+            this.btnContinuar.Size = new System.Drawing.Size(243, 42);
+            this.btnContinuar.TabIndex = 25;
+            this.btnContinuar.UseVisualStyleBackColor = true;
+            this.btnContinuar.Click += new System.EventHandler(this.btnContinuar_Click);
             // 
             // CambiarClave
             // 
