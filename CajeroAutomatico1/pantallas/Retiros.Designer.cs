@@ -206,6 +206,7 @@ namespace CajeroAutomatico1.pantallas
             // btnSumaDiferente
             // 
             this.btnSumaDiferente.BackgroundImage = global::CajeroAutomatico1.Properties.Resources.Imagen24;
+            this.btnSumaDiferente.Enabled = false;
             this.btnSumaDiferente.Location = new System.Drawing.Point(381, 207);
             this.btnSumaDiferente.Name = "btnSumaDiferente";
             this.btnSumaDiferente.Size = new System.Drawing.Size(260, 43);

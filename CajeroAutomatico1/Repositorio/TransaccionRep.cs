@@ -1,6 +1,8 @@
 ﻿using CajeroAutomatico1.Dominio;
 using CajeroAutomatico1.Interfaces;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace CajeroAutomatico1.Repositorio
 {
@@ -12,20 +14,42 @@ namespace CajeroAutomatico1.Repositorio
         {
             this.db = db;
         }
-        public void Retirar(int cuentaId, decimal valor) { 
-        
+        public void Retirar(int cuentaId, decimal valor) {
+
+            var transaccion = new Transaccion { 
+                CuentaId = cuentaId,
+                Fecha = DateTime.Now,
+                Referencia = "Retiro por cajero automatico",
+                Valor = valor * -1
+            };
+
+            db.Transacciones.Add(transaccion);
+            db.SaveChanges();
         }
 
-        public List<Transaccion> Transacciones() {
-            return null;
+        public List<Transaccion> Transacciones(int cuentaId) {
+            return db.Transacciones
+                .Where(t => t.CuentaId == cuentaId)
+                .OrderByDescending(t => t.Fecha)
+                .Take(5)
+                .ToList();
         }
 
-        public decimal SaldoActual() {
-            return 0;
+        public decimal SaldoActual(int cuentaId) {
+            return db.Transacciones.Where(t => t.CuentaId == cuentaId).Sum(t => t.Valor);
         }
 
-        public void Pago(decimal valor, string referencia) { 
-            
+        public void Pago(int cuentaId, decimal valor, string referencia) {
+            var transaccion = new Transaccion
+            {
+                CuentaId = cuentaId,
+                Fecha = DateTime.Now,
+                Referencia = $"Pago de servicio. Referencia: {referencia}",
+                Valor = valor * -1
+            };
+
+            db.Transacciones.Add(transaccion);
+            db.SaveChanges();
         }
     }
 }
