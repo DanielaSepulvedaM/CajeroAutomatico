@@ -176,6 +176,24 @@
     <Compile Include="pantallas\ConfirmacionRetiro.Designer.cs">
       <DependentUpon>ConfirmacionRetiro.cs</DependentUpon>
     </Compile>
+    <Compile Include="pantallas\ConsultaMovimientos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pantallas\ConsultaMovimientos.Designer.cs">
+      <DependentUpon>ConsultaMovimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pantallas\Consultas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pantallas\Consultas.Designer.cs">
+      <DependentUpon>Consultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pantallas\ConsultaSaldo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pantallas\ConsultaSaldo.Designer.cs">
+      <DependentUpon>ConsultaSaldo.cs</DependentUpon>
+    </Compile>
     <Compile Include="pantallas\Error.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -266,6 +284,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pantallas\ConfirmacionRetiro.resx">
       <DependentUpon>ConfirmacionRetiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pantallas\ConsultaMovimientos.resx">
+      <DependentUpon>ConsultaMovimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pantallas\Consultas.resx">
+      <DependentUpon>Consultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pantallas\ConsultaSaldo.resx">
+      <DependentUpon>ConsultaSaldo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pantallas\Desbloquear.resx">
       <DependentUpon>Desbloquear.cs</DependentUpon>
@@ -483,7 +510,21 @@
   <ItemGroup>
     <None Include="Resources\Imagenn47.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Imagenn48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn49.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn51.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\SQLitePCLRaw.lib.e_sqlite3.2.0.4\build\net461\SQLitePCLRaw.lib.e_sqlite3.targets" Condition="Exists('..\packages\SQLitePCLRaw.lib.e_sqlite3.2.0.4\build\net461\SQLitePCLRaw.lib.e_sqlite3.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
