@@ -1,4 +1,5 @@
-﻿using CajeroAutomatico1.Infraestructura;
+﻿using CajeroAutomatico1.Dominio;
+using CajeroAutomatico1.Infraestructura;
 using CajeroAutomatico1.Interfaces;
 using CajeroAutomatico1.pantallas;
 using CajeroAutomatico1.Repositorio;
@@ -25,7 +26,7 @@ namespace CajeroAutomatico1
         {
             InitializeComponent();
 
-            db = new DbMoq();
+            db = new CajeroDbContext();
 
             ClienteRep = new ClienteRep(db);
             TransaccionRep = new TransaccionRep(db);
@@ -35,6 +36,7 @@ namespace CajeroAutomatico1
             var formAuth = new Autenticacion(this);
             this.Controls.Add(formAuth);
         }
+
 
         public void NavegarA(string vista, object parametros = null)
         {
@@ -103,5 +105,10 @@ namespace CajeroAutomatico1
             { "transferencia", (shell) => new Transferencia(shell) },
             { "error", (shell) => new Error(shell) }
         };
+
+        private void Shell_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            db.Dispose();
+        }
     }
 }

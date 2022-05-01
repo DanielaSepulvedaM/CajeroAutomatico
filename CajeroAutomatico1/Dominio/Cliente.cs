@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CajeroAutomatico1.Dominio
 {
+    [Table("Clientes")]
     public class Cliente
     {
         public string ClienteId { get; set; }

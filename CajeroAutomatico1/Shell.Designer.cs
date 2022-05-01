@@ -40,6 +40,7 @@ namespace CajeroAutomatico1
             this.MaximizeBox = false;
             this.Name = "Shell";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Shell_FormClosing);
             this.ResumeLayout(false);
 
         }

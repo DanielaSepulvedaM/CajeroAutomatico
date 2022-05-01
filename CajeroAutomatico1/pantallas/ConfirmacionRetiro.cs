@@ -37,7 +37,7 @@ namespace CajeroAutomatico1.pantallas
             try
             {
                 repo.Retirar(cliente.Cuenta.CuentaId, valorARetirar);
-                shell.NavegarA("confirmacionretiro");
+                shell.NavegarA("pantallafinalretiro");
             }
             catch (ApplicationException ex)
             {

@@ -1,17 +1,14 @@
 ﻿using CajeroAutomatico1.Dominio;
+using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CajeroAutomatico1.Interfaces
 {
-    public interface IBaseDeDatos
+    public interface IBaseDeDatos : IDisposable
     {
-        List<Cliente> Clientes { get; }
-        List<Cuenta> Cuentas { get;  }
-        List<Transaccion> Transacciones { get; }
+        DbSet<Cliente> Clientes { get; }
+        DbSet<Cuenta> Cuentas { get;  }
+        DbSet<Transaccion> Transacciones { get; }
 
         void SaveChanges();
     }
