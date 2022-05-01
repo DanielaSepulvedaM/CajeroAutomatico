@@ -48,5 +48,10 @@ namespace CajeroAutomatico1.pantallas
                 shell.NavegarA("error");
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
