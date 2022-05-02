@@ -154,9 +154,6 @@
   <data name="Imagenn22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Imagenn22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Imagenn52" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Imagenn52.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Imagen19" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Imagen19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -184,14 +181,11 @@
   <data name="Imagen13" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Imagen13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Imagenn47" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Imagenn47.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Imagenn51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Imagenn51.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Imagen9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Imagen9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Imagen7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Imagen7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Imagenn32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Imagenn32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,6 +202,9 @@
   <data name="Imagen15" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Imagen15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Imagenn45" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Imagenn45.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Imagenn25" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Imagenn25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -216,6 +213,9 @@
   </data>
   <data name="Imagen26" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Imagen26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Imagen1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Imagen1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Imagenn48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Imagenn48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,8 +235,8 @@
   <data name="Imagen25" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Imagen25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Imagen211" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Imagen21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Imagenn52" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Imagenn52.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Imagenn35" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Imagenn35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -265,14 +265,17 @@
   <data name="Imagen22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Imagen22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Imagen1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Imagen1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Imagen7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Imagen7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Imagenn49" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Imagenn49.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Imagenn37" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Imagenn37.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Imagen211" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Imagen21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Imagen5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Imagen5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -283,8 +286,8 @@
   <data name="Imagen6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Imagen6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Imagenn45" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Imagenn45.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Imagenn47" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Imagenn47.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Imagen14" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Imagen14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -301,7 +304,7 @@
   <data name="Imagenn50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Imagenn50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Imagenn51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Imagenn511" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Imagenn51.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

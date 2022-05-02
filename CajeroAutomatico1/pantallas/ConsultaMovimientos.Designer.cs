@@ -29,24 +29,19 @@ namespace CajeroAutomatico1.pantallas
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnContinuar = new System.Windows.Forms.Button();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbItem = new System.Windows.Forms.Label();
+            this.lbFecha = new System.Windows.Forms.Label();
+            this.lbDesc = new System.Windows.Forms.Label();
+            this.lbVlr = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::CajeroAutomatico1.Properties.Resources.Imagenn51;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(800, 384);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // pictureBox7
             // 
@@ -90,10 +85,64 @@ namespace CajeroAutomatico1.pantallas
             this.pictureBox8.TabIndex = 35;
             this.pictureBox8.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CajeroAutomatico1.Properties.Resources.Imagenn511;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(800, 384);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lbItem
+            // 
+            this.lbItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbItem.Location = new System.Drawing.Point(95, 148);
+            this.lbItem.Name = "lbItem";
+            this.lbItem.Size = new System.Drawing.Size(43, 25);
+            this.lbItem.TabIndex = 39;
+            this.lbItem.Text = "No. ";
+            // 
+            // lbFecha
+            // 
+            this.lbFecha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFecha.Location = new System.Drawing.Point(169, 148);
+            this.lbFecha.Name = "lbFecha";
+            this.lbFecha.Size = new System.Drawing.Size(68, 25);
+            this.lbFecha.TabIndex = 40;
+            this.lbFecha.Text = "Fecha";
+            this.lbFecha.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // lbDesc
+            // 
+            this.lbDesc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDesc.Location = new System.Drawing.Point(323, 148);
+            this.lbDesc.Name = "lbDesc";
+            this.lbDesc.Size = new System.Drawing.Size(176, 25);
+            this.lbDesc.TabIndex = 41;
+            this.lbDesc.Text = "Descripcion";
+            // 
+            // lbVlr
+            // 
+            this.lbVlr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbVlr.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVlr.Location = new System.Drawing.Point(599, 148);
+            this.lbVlr.Name = "lbVlr";
+            this.lbVlr.Size = new System.Drawing.Size(68, 25);
+            this.lbVlr.TabIndex = 42;
+            this.lbVlr.Text = "Valor";
+            // 
             // ConsultaMovimientos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lbVlr);
+            this.Controls.Add(this.lbDesc);
+            this.Controls.Add(this.lbFecha);
+            this.Controls.Add(this.lbItem);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnContinuar);
@@ -101,9 +150,9 @@ namespace CajeroAutomatico1.pantallas
             this.Controls.Add(this.pictureBox1);
             this.Name = "ConsultaMovimientos";
             this.Size = new System.Drawing.Size(800, 463);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -115,5 +164,9 @@ namespace CajeroAutomatico1.pantallas
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnContinuar;
         private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Label lbItem;
+        private System.Windows.Forms.Label lbFecha;
+        private System.Windows.Forms.Label lbDesc;
+        private System.Windows.Forms.Label lbVlr;
     }
 }
