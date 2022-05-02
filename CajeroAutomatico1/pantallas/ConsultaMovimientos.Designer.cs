@@ -37,6 +37,10 @@ namespace CajeroAutomatico1.pantallas
             this.lbFecha = new System.Windows.Forms.Label();
             this.lbDesc = new System.Windows.Forms.Label();
             this.lbVlr = new System.Windows.Forms.Label();
+            this.lblNum = new System.Windows.Forms.Label();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.lblDescripcion = new System.Windows.Forms.Label();
+            this.lblValor = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,6 +68,7 @@ namespace CajeroAutomatico1.pantallas
             this.btnCancelar.Size = new System.Drawing.Size(243, 42);
             this.btnCancelar.TabIndex = 37;
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // pictureBox8
             // 
@@ -103,7 +108,6 @@ namespace CajeroAutomatico1.pantallas
             this.lbFecha.Size = new System.Drawing.Size(68, 25);
             this.lbFecha.TabIndex = 40;
             this.lbFecha.Text = "Fecha";
-            this.lbFecha.Click += new System.EventHandler(this.label1_Click);
             // 
             // lbDesc
             // 
@@ -124,6 +128,44 @@ namespace CajeroAutomatico1.pantallas
             this.lbVlr.Size = new System.Drawing.Size(68, 25);
             this.lbVlr.TabIndex = 42;
             this.lbVlr.Text = "Valor";
+            // 
+            // lblNum
+            // 
+            this.lblNum.AutoSize = true;
+            this.lblNum.Location = new System.Drawing.Point(96, 188);
+            this.lblNum.Name = "lblNum";
+            this.lblNum.Size = new System.Drawing.Size(35, 13);
+            this.lblNum.TabIndex = 43;
+            this.lblNum.Text = "label1";
+            // 
+            // lblFecha
+            // 
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Location = new System.Drawing.Point(170, 188);
+            this.lblFecha.MaximumSize = new System.Drawing.Size(100, 0);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(35, 13);
+            this.lblFecha.TabIndex = 44;
+            this.lblFecha.Text = "label2";
+            // 
+            // lblDescripcion
+            // 
+            this.lblDescripcion.AutoSize = true;
+            this.lblDescripcion.Location = new System.Drawing.Point(324, 188);
+            this.lblDescripcion.MaximumSize = new System.Drawing.Size(200, 0);
+            this.lblDescripcion.Name = "lblDescripcion";
+            this.lblDescripcion.Size = new System.Drawing.Size(199, 39);
+            this.lblDescripcion.TabIndex = 45;
+            this.lblDescripcion.Text = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+            // 
+            // lblValor
+            // 
+            this.lblValor.AutoSize = true;
+            this.lblValor.Location = new System.Drawing.Point(600, 188);
+            this.lblValor.Name = "lblValor";
+            this.lblValor.Size = new System.Drawing.Size(35, 13);
+            this.lblValor.TabIndex = 46;
+            this.lblValor.Text = "label4";
             // 
             // ConsultaMovimientos
             // 
@@ -156,5 +198,9 @@ namespace CajeroAutomatico1.pantallas
         private System.Windows.Forms.Label lbFecha;
         private System.Windows.Forms.Label lbDesc;
         private System.Windows.Forms.Label lbVlr;
+        private System.Windows.Forms.Label lblNum;
+        private System.Windows.Forms.Label lblFecha;
+        private System.Windows.Forms.Label lblDescripcion;
+        private System.Windows.Forms.Label lblValor;
     }
 }
