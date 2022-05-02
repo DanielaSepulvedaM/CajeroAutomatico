@@ -37,7 +37,6 @@ namespace CajeroAutomatico1.pantallas
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnContinuar = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -69,6 +68,7 @@ namespace CajeroAutomatico1.pantallas
             this.btnCancelar.Size = new System.Drawing.Size(243, 47);
             this.btnCancelar.TabIndex = 32;
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnConslExt
             // 
@@ -79,6 +79,7 @@ namespace CajeroAutomatico1.pantallas
             this.btnConslExt.Size = new System.Drawing.Size(298, 43);
             this.btnConslExt.TabIndex = 31;
             this.btnConslExt.UseVisualStyleBackColor = true;
+            this.btnConslExt.Click += new System.EventHandler(this.btnConslExt_Click);
             // 
             // pictureBox5
             // 
@@ -99,6 +100,7 @@ namespace CajeroAutomatico1.pantallas
             this.btnConslMov.Size = new System.Drawing.Size(298, 43);
             this.btnConslMov.TabIndex = 29;
             this.btnConslMov.UseVisualStyleBackColor = true;
+            this.btnConslMov.Click += new System.EventHandler(this.btnConslMov_Click);
             // 
             // pictureBox2
             // 
@@ -131,15 +133,6 @@ namespace CajeroAutomatico1.pantallas
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // btnContinuar
-            // 
-            this.btnContinuar.BackgroundImage = global::CajeroAutomatico1.Properties.Resources.Imagenn42;
-            this.btnContinuar.Location = new System.Drawing.Point(476, 371);
-            this.btnContinuar.Name = "btnContinuar";
-            this.btnContinuar.Size = new System.Drawing.Size(244, 47);
-            this.btnContinuar.TabIndex = 35;
-            this.btnContinuar.UseVisualStyleBackColor = true;
-            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::CajeroAutomatico1.Properties.Resources.Imagen12;
@@ -155,7 +148,6 @@ namespace CajeroAutomatico1.pantallas
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.btnContinuar);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnConslExt);
@@ -186,7 +178,6 @@ namespace CajeroAutomatico1.pantallas
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button btnConslMov;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button btnContinuar;
         private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

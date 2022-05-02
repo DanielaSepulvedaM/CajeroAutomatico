@@ -36,7 +36,8 @@ namespace CajeroAutomatico1.Repositorio
         }
 
         public decimal SaldoActual(int cuentaId) {
-            return db.Transacciones.Where(t => t.CuentaId == cuentaId).Sum(t => t.Valor);
+            var tran = db.Transacciones.Where(t => t.CuentaId == cuentaId).ToList();
+            return tran.Sum(t => t.Valor);
         }
 
         public void Pago(int cuentaId, decimal valor, string referencia) {

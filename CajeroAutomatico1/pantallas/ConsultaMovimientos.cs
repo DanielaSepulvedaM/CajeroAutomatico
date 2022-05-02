@@ -12,7 +12,7 @@ namespace CajeroAutomatico1.pantallas
 {
     public partial class ConsultaMovimientos : UserControl
     {
-        public ConsultaMovimientos()
+        public ConsultaMovimientos(Shell shell)
         {
             InitializeComponent();
         }

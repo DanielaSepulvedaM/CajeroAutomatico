@@ -30,10 +30,9 @@ namespace CajeroAutomatico1.pantallas
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblVlrRetirado = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblSaldoActual = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btnContinuar = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -50,25 +49,25 @@ namespace CajeroAutomatico1.pantallas
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // lblVlrRetirado
+            // lblSaldoActual
             // 
-            this.lblVlrRetirado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblVlrRetirado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVlrRetirado.Location = new System.Drawing.Point(530, 208);
-            this.lblVlrRetirado.Name = "lblVlrRetirado";
-            this.lblVlrRetirado.Size = new System.Drawing.Size(120, 25);
-            this.lblVlrRetirado.TabIndex = 2;
-            this.lblVlrRetirado.Text = "$ 20.000,00";
+            this.lblSaldoActual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblSaldoActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSaldoActual.Location = new System.Drawing.Point(530, 208);
+            this.lblSaldoActual.Name = "lblSaldoActual";
+            this.lblSaldoActual.Size = new System.Drawing.Size(120, 25);
+            this.lblSaldoActual.TabIndex = 2;
+            this.lblSaldoActual.Text = "$ 20.000,00";
             // 
-            // label1
+            // lblTotal
             // 
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(530, 283);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 25);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "$ 20.000,00";
+            this.lblTotal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Location = new System.Drawing.Point(530, 283);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(120, 25);
+            this.lblTotal.TabIndex = 3;
+            this.lblTotal.Text = "$ 20.000,00";
             // 
             // pictureBox4
             // 
@@ -79,15 +78,6 @@ namespace CajeroAutomatico1.pantallas
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 40;
             this.pictureBox4.TabStop = false;
-            // 
-            // btnContinuar
-            // 
-            this.btnContinuar.BackgroundImage = global::CajeroAutomatico1.Properties.Resources.Imagenn42;
-            this.btnContinuar.Location = new System.Drawing.Point(472, 382);
-            this.btnContinuar.Name = "btnContinuar";
-            this.btnContinuar.Size = new System.Drawing.Size(244, 47);
-            this.btnContinuar.TabIndex = 39;
-            this.btnContinuar.UseVisualStyleBackColor = true;
             // 
             // pictureBox3
             // 
@@ -111,17 +101,17 @@ namespace CajeroAutomatico1.pantallas
             this.btnCancelar.Size = new System.Drawing.Size(243, 47);
             this.btnCancelar.TabIndex = 37;
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // ConsultaSaldo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.btnContinuar);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblVlrRetirado);
+            this.Controls.Add(this.lblTotal);
+            this.Controls.Add(this.lblSaldoActual);
             this.Controls.Add(this.pictureBox1);
             this.Name = "ConsultaSaldo";
             this.Size = new System.Drawing.Size(800, 463);
@@ -135,10 +125,9 @@ namespace CajeroAutomatico1.pantallas
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lblVlrRetirado;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSaldoActual;
+        private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button btnContinuar;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btnCancelar;
     }

@@ -37,7 +37,7 @@ namespace CajeroAutomatico1.pantallas
 
         private void btnConsultas_Click(object sender, EventArgs e)
         {
-
+            shell.NavegarA("menuconsultas");
         }
 
         private void btnPagarFactura_Click(object sender, EventArgs e)

@@ -1,5 +1,6 @@
 ﻿using CajeroAutomatico1.Dominio;
 using CajeroAutomatico1.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace CajeroAutomatico1.Repositorio
 
         public Cliente Autenticar(string identificacion, int clave) {
 
-            return db.Clientes.FirstOrDefault(c => c.ClienteId == identificacion && c.Clave == clave);
+            return db.Clientes.Include(c => c.Cuenta).FirstOrDefault(c => c.ClienteId == identificacion && c.Clave == clave);
         }
 
         public void CambiarClave(string identificacion, int claveActual, int nuevaClave) { 

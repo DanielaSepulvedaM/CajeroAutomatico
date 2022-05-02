@@ -32,7 +32,6 @@ namespace CajeroAutomatico1.pantallas
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnContinuar = new System.Windows.Forms.Button();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -71,15 +70,6 @@ namespace CajeroAutomatico1.pantallas
             this.btnCancelar.TabIndex = 37;
             this.btnCancelar.UseVisualStyleBackColor = false;
             // 
-            // btnContinuar
-            // 
-            this.btnContinuar.BackgroundImage = global::CajeroAutomatico1.Properties.Resources.Imagenn42;
-            this.btnContinuar.Location = new System.Drawing.Point(465, 401);
-            this.btnContinuar.Name = "btnContinuar";
-            this.btnContinuar.Size = new System.Drawing.Size(243, 42);
-            this.btnContinuar.TabIndex = 36;
-            this.btnContinuar.UseVisualStyleBackColor = true;
-            // 
             // pictureBox8
             // 
             this.pictureBox8.Image = global::CajeroAutomatico1.Properties.Resources.Imagen92;
@@ -96,7 +86,6 @@ namespace CajeroAutomatico1.pantallas
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnContinuar);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox1);
             this.Name = "ConsultaMovimientos";
@@ -113,7 +102,6 @@ namespace CajeroAutomatico1.pantallas
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnContinuar;
         private System.Windows.Forms.PictureBox pictureBox8;
     }
 }

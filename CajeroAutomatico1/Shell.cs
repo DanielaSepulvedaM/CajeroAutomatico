@@ -103,7 +103,10 @@ namespace CajeroAutomatico1
             { "transaccionexitosa", (shell) => new PantallaTransaccionExitosa(shell) },
             { "retiro", (shell) => new Retiros(shell) },
             { "transferencia", (shell) => new Transferencia(shell) },
-            { "error", (shell) => new Error(shell) }
+            { "error", (shell) => new Error(shell) },
+            { "menuconsultas", (shell) => new Consultas(shell) },
+            { "consultamovimientos", (shell) => new ConsultaMovimientos(shell) },
+            { "consultasaldo", shell => new ConsultaSaldo(shell) }
         };
 
         private void Shell_FormClosing(object sender, FormClosingEventArgs e)
