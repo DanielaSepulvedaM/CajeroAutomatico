@@ -21,7 +21,7 @@ namespace CajeroAutomatico1.Infraestructura
 
             Database.EnsureCreated();
 
-            Database.Migrate();
+            //Database.Migrate();
 
             Seed();
         }

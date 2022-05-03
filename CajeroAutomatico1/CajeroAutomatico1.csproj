@@ -200,6 +200,12 @@
     <Compile Include="pantallas\Error.Designer.cs">
       <DependentUpon>Error.cs</DependentUpon>
     </Compile>
+    <Compile Include="pantallas\SaldoInsuficiente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pantallas\SaldoInsuficiente.Designer.cs">
+      <DependentUpon>SaldoInsuficiente.cs</DependentUpon>
+    </Compile>
     <Compile Include="pantallas\PantallaSemiFinalPagoFactura.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -308,6 +314,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pantallas\PagarFacturas.resx">
       <DependentUpon>PagarFacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pantallas\SaldoInsuficiente.resx">
+      <DependentUpon>SaldoInsuficiente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pantallas\PantallaFinalRetiro.resx">
       <DependentUpon>PantallaFinalRetiro.cs</DependentUpon>
@@ -524,6 +533,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Imagenn51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenn53.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\SQLitePCLRaw.lib.e_sqlite3.2.0.4\build\net461\SQLitePCLRaw.lib.e_sqlite3.targets" Condition="Exists('..\packages\SQLitePCLRaw.lib.e_sqlite3.2.0.4\build\net461\SQLitePCLRaw.lib.e_sqlite3.targets')" />
