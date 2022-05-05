@@ -241,6 +241,7 @@
       <DependentUpon>PantallaSemiFinalPagoFactura.cs</DependentUpon>
     </Compile>
     <Compile Include="Repositorio\ClienteRep.cs" />
+    <Compile Include="Repositorio\CuentaRep.cs" />
     <Compile Include="Repositorio\TransaccionRep.cs" />
     <Compile Include="Shell.cs">
       <SubType>Form</SubType>

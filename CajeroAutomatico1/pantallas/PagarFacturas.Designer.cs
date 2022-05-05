@@ -29,7 +29,7 @@ namespace CajeroAutomatico1.pantallas
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtBxCodConvenio = new System.Windows.Forms.TextBox();
+            this.txtConvenio = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -42,15 +42,15 @@ namespace CajeroAutomatico1.pantallas
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtBxCodConvenio
+            // txtConvenio
             // 
-            this.txtBxCodConvenio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtBxCodConvenio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxCodConvenio.Location = new System.Drawing.Point(271, 249);
-            this.txtBxCodConvenio.Multiline = true;
-            this.txtBxCodConvenio.Name = "txtBxCodConvenio";
-            this.txtBxCodConvenio.Size = new System.Drawing.Size(297, 41);
-            this.txtBxCodConvenio.TabIndex = 7;
+            this.txtConvenio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtConvenio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConvenio.Location = new System.Drawing.Point(271, 249);
+            this.txtConvenio.Multiline = true;
+            this.txtConvenio.Name = "txtConvenio";
+            this.txtConvenio.Size = new System.Drawing.Size(297, 41);
+            this.txtConvenio.TabIndex = 7;
             // 
             // pictureBox2
             // 
@@ -73,6 +73,7 @@ namespace CajeroAutomatico1.pantallas
             this.btnCancelar.Size = new System.Drawing.Size(243, 42);
             this.btnCancelar.TabIndex = 24;
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // pictureBox7
             // 
@@ -106,6 +107,7 @@ namespace CajeroAutomatico1.pantallas
             this.btnTransferir.Size = new System.Drawing.Size(234, 42);
             this.btnTransferir.TabIndex = 21;
             this.btnTransferir.UseVisualStyleBackColor = false;
+            this.btnTransferir.Click += new System.EventHandler(this.btnTransferir_Click);
             // 
             // pictureBox1
             // 
@@ -120,16 +122,15 @@ namespace CajeroAutomatico1.pantallas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.btnTransferir);
-            this.Controls.Add(this.txtBxCodConvenio);
+            this.Controls.Add(this.txtConvenio);
             this.Controls.Add(this.pictureBox1);
             this.Name = "PagarFacturas";
-            this.Text = "PagarFacturas";
+            this.Size = new System.Drawing.Size(800, 450);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -142,7 +143,7 @@ namespace CajeroAutomatico1.pantallas
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtBxCodConvenio;
+        private System.Windows.Forms.TextBox txtConvenio;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox4;

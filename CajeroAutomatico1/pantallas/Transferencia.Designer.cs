@@ -31,27 +31,17 @@ namespace CajeroAutomatico1.pantallas
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtBxIdentDestino = new System.Windows.Forms.TextBox();
-            this.txtBxCtaDestino = new System.Windows.Forms.TextBox();
-            this.listBxTpCtaDestino = new System.Windows.Forms.ListBox();
+            this.txtIdentificacion = new System.Windows.Forms.TextBox();
+            this.txtCuenta = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtBxIdentOrigen = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtBxCtaOrigen = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.listBxTpCtaOrigen = new System.Windows.Forms.ListBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnTransferir = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtValor = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,7 +51,7 @@ namespace CajeroAutomatico1.pantallas
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 23);
+            this.label1.Location = new System.Drawing.Point(6, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(157, 23);
             this.label1.TabIndex = 1;
@@ -71,152 +61,44 @@ namespace CajeroAutomatico1.pantallas
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 56);
+            this.label2.Location = new System.Drawing.Point(6, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 23);
             this.label2.TabIndex = 2;
             this.label2.Text = "Número de cuenta\r\n";
             // 
-            // label3
+            // txtIdentificacion
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 89);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 23);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Tipo de cuenta\r\n";
+            this.txtIdentificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdentificacion.Location = new System.Drawing.Point(168, 20);
+            this.txtIdentificacion.Multiline = true;
+            this.txtIdentificacion.Name = "txtIdentificacion";
+            this.txtIdentificacion.Size = new System.Drawing.Size(180, 27);
+            this.txtIdentificacion.TabIndex = 6;
             // 
-            // txtBxIdentDestino
+            // txtCuenta
             // 
-            this.txtBxIdentDestino.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxIdentDestino.Location = new System.Drawing.Point(168, 20);
-            this.txtBxIdentDestino.Multiline = true;
-            this.txtBxIdentDestino.Name = "txtBxIdentDestino";
-            this.txtBxIdentDestino.Size = new System.Drawing.Size(180, 27);
-            this.txtBxIdentDestino.TabIndex = 6;
-            // 
-            // txtBxCtaDestino
-            // 
-            this.txtBxCtaDestino.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxCtaDestino.Location = new System.Drawing.Point(168, 56);
-            this.txtBxCtaDestino.Multiline = true;
-            this.txtBxCtaDestino.Name = "txtBxCtaDestino";
-            this.txtBxCtaDestino.Size = new System.Drawing.Size(180, 27);
-            this.txtBxCtaDestino.TabIndex = 7;
-            // 
-            // listBxTpCtaDestino
-            // 
-            this.listBxTpCtaDestino.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBxTpCtaDestino.FormattingEnabled = true;
-            this.listBxTpCtaDestino.ItemHeight = 16;
-            this.listBxTpCtaDestino.Items.AddRange(new object[] {
-            "Cuenta de Ahorros",
-            "Cuenta de Credito "});
-            this.listBxTpCtaDestino.Location = new System.Drawing.Point(168, 89);
-            this.listBxTpCtaDestino.Name = "listBxTpCtaDestino";
-            this.listBxTpCtaDestino.Size = new System.Drawing.Size(180, 36);
-            this.listBxTpCtaDestino.TabIndex = 8;
+            this.txtCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCuenta.Location = new System.Drawing.Point(168, 56);
+            this.txtCuenta.Multiline = true;
+            this.txtCuenta.Name = "txtCuenta";
+            this.txtCuenta.Size = new System.Drawing.Size(180, 27);
+            this.txtCuenta.TabIndex = 7;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txtBxIdentDestino);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtBxCtaDestino);
+            this.groupBox1.Controls.Add(this.txtValor);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.listBxTpCtaDestino);
-            this.groupBox1.Location = new System.Drawing.Point(424, 220);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.txtIdentificacion);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txtCuenta);
+            this.groupBox1.Location = new System.Drawing.Point(22, 210);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(354, 142);
+            this.groupBox1.Size = new System.Drawing.Size(354, 156);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cuenta Destino";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.txtBxIdentOrigen);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.txtBxCtaOrigen);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.listBxTpCtaOrigen);
-            this.groupBox2.Location = new System.Drawing.Point(12, 220);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(382, 142);
-            this.groupBox2.TabIndex = 22;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Cuenta Origen";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 23);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(181, 27);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Número de identificación";
-            // 
-            // txtBxIdentOrigen
-            // 
-            this.txtBxIdentOrigen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxIdentOrigen.Location = new System.Drawing.Point(193, 23);
-            this.txtBxIdentOrigen.Multiline = true;
-            this.txtBxIdentOrigen.Name = "txtBxIdentOrigen";
-            this.txtBxIdentOrigen.Size = new System.Drawing.Size(180, 27);
-            this.txtBxIdentOrigen.TabIndex = 6;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 56);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(135, 27);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Número de cuenta\r\n";
-            // 
-            // txtBxCtaOrigen
-            // 
-            this.txtBxCtaOrigen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxCtaOrigen.Location = new System.Drawing.Point(193, 56);
-            this.txtBxCtaOrigen.Multiline = true;
-            this.txtBxCtaOrigen.Name = "txtBxCtaOrigen";
-            this.txtBxCtaOrigen.Size = new System.Drawing.Size(180, 27);
-            this.txtBxCtaOrigen.TabIndex = 7;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(6, 89);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 27);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Tipo de cuenta\r\n";
-            // 
-            // listBxTpCtaOrigen
-            // 
-            this.listBxTpCtaOrigen.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBxTpCtaOrigen.FormattingEnabled = true;
-            this.listBxTpCtaOrigen.ItemHeight = 16;
-            this.listBxTpCtaOrigen.Items.AddRange(new object[] {
-            "Cuenta de Ahorros",
-            "Cuenta de Credito "});
-            this.listBxTpCtaOrigen.Location = new System.Drawing.Point(193, 89);
-            this.listBxTpCtaOrigen.Name = "listBxTpCtaOrigen";
-            this.listBxTpCtaOrigen.Size = new System.Drawing.Size(180, 36);
-            this.listBxTpCtaOrigen.TabIndex = 8;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::CajeroAutomatico1.Properties.Resources.Imagenn33;
-            this.pictureBox2.Location = new System.Drawing.Point(400, 220);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(18, 153);
-            this.pictureBox2.TabIndex = 23;
-            this.pictureBox2.TabStop = false;
             // 
             // btnCancelar
             // 
@@ -230,6 +112,7 @@ namespace CajeroAutomatico1.pantallas
             this.btnCancelar.Size = new System.Drawing.Size(243, 42);
             this.btnCancelar.TabIndex = 20;
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // pictureBox7
             // 
@@ -263,6 +146,7 @@ namespace CajeroAutomatico1.pantallas
             this.btnTransferir.Size = new System.Drawing.Size(234, 42);
             this.btnTransferir.TabIndex = 16;
             this.btnTransferir.UseVisualStyleBackColor = false;
+            this.btnTransferir.Click += new System.EventHandler(this.btnTransferir_Click);
             // 
             // pictureBox1
             // 
@@ -273,13 +157,29 @@ namespace CajeroAutomatico1.pantallas
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 105);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(41, 23);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Valor";
+            // 
+            // txtValor
+            // 
+            this.txtValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValor.Location = new System.Drawing.Point(168, 99);
+            this.txtValor.Multiline = true;
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(180, 27);
+            this.txtValor.TabIndex = 9;
+            // 
             // Transferencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.pictureBox7);
@@ -287,12 +187,9 @@ namespace CajeroAutomatico1.pantallas
             this.Controls.Add(this.btnTransferir);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Transferencia";
-            this.Text = "Transferencia";
+            this.Size = new System.Drawing.Size(800, 450);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -305,22 +202,14 @@ namespace CajeroAutomatico1.pantallas
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtBxIdentDestino;
-        private System.Windows.Forms.TextBox txtBxCtaDestino;
-        private System.Windows.Forms.ListBox listBxTpCtaDestino;
+        private System.Windows.Forms.TextBox txtIdentificacion;
+        private System.Windows.Forms.TextBox txtCuenta;
         private System.Windows.Forms.Button btnTransferir;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtBxIdentOrigen;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtBxCtaOrigen;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ListBox listBxTpCtaOrigen;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TextBox txtValor;
+        private System.Windows.Forms.Label label3;
     }
 }

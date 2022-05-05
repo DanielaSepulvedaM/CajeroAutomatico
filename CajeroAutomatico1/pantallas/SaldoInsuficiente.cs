@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace CajeroAutomatico1.pantallas
 {
-    public partial class PantallaFinalRetiro : UserControl
+    public partial class SaldoInsuficiente : UserControl
     {
         private readonly Shell shell;
 
-        public PantallaFinalRetiro(Shell shell)
+        public SaldoInsuficiente(Shell shell)
         {
             InitializeComponent();
             this.shell = shell;

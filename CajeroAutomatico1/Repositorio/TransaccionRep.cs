@@ -57,5 +57,34 @@ namespace CajeroAutomatico1.Repositorio
             db.Transacciones.Add(transaccion);
             db.SaveChanges();
         }
+
+        public void Transferir(int cuentaIdOrigen, int cuentaIdDestino, decimal valor)
+        {
+            var saldoActual = SaldoActual(cuentaIdOrigen);
+
+            if (saldoActual - valor < 0)
+                throw new ApplicationException("Saldos insuficientes");
+
+            var cuentaOrigen = db.Cuentas.First(c => c.CuentaId == cuentaIdOrigen);
+            var cuentaDestino = db.Cuentas.First(c => c.CuentaId == cuentaIdDestino);
+
+            var debito = new Transaccion {
+                CuentaId = cuentaIdOrigen,
+                Fecha = DateTime.Now,
+                Referencia = $"Transferencia bancaria a cuenta numero: {cuentaDestino.Numero}",
+                Valor = -1 * valor
+            };
+
+            var credito = new Transaccion
+            {
+                CuentaId = cuentaIdDestino,
+                Fecha = DateTime.Now,
+                Referencia = $"Transferencia bancaria desde cuenta numero: {cuentaOrigen.Numero}",
+                Valor = valor
+            };
+
+            db.Transacciones.AddRange(debito, credito);
+            db.SaveChanges();
+        }
     }
 }

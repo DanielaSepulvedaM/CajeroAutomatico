@@ -1,7 +1,7 @@
 ﻿
 namespace CajeroAutomatico1.pantallas
 {
-    partial class PantallaFinalRetiro
+    partial class SaldoInsuficiente
     {
         /// <summary>
         /// Required designer variable.

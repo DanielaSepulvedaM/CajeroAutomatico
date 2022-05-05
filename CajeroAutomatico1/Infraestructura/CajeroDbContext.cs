@@ -30,13 +30,15 @@ namespace CajeroAutomatico1.Infraestructura
 
         public void Seed() {
             if (!this.Clientes.Any()) {
-                var c = new Cliente { Nombres = "John el esquizofrenico", Clave = 1234, ClienteId = "1018420217" };
+                var c1 = new Cliente { Nombres = "John el esquizofrenico", Clave = 1234, ClienteId = "1018420217" };
+                var c2 = new Cliente { Nombres = "Ingri", Clave = 5678, ClienteId = "1010215846" };
 
-                this.Clientes.Add(c);
+                this.Clientes.AddRange(c1, c2);
                 this.SaveChanges();
 
-                var cu = new Cuenta { ClienteId = "1018420217", CuentaId = 1, Numero = "00491022" };
-                this.Cuentas.Add(cu);
+                var cu1 = new Cuenta { ClienteId = "1018420217", CuentaId = 1, Numero = "00491022" };
+                var cu2 = new Cuenta { ClienteId = "1010215846", CuentaId = 2, Numero = "00125699" };
+                this.Cuentas.AddRange(cu1, cu2);
 
                 this.SaveChanges();
 

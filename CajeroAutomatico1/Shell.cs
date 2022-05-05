@@ -20,6 +20,8 @@ namespace CajeroAutomatico1
 
         public TransaccionRep TransaccionRep { get; internal set; }
 
+        public CuentaRep CuentaRep { get; internal set; }
+
         public Dictionary<string, object> Context { get; internal set; }
 
         public Shell()
@@ -30,6 +32,7 @@ namespace CajeroAutomatico1
 
             ClienteRep = new ClienteRep(db);
             TransaccionRep = new TransaccionRep(db);
+            CuentaRep = new CuentaRep(db);
 
             Context = new Dictionary<string, object>();
 
