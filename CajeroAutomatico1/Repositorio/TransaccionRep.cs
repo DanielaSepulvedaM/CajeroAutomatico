@@ -16,6 +16,11 @@ namespace CajeroAutomatico1.Repositorio
         }
         public void Retirar(int cuentaId, decimal valor) {
 
+            var saldoActual = SaldoActual(cuentaId);
+
+            if (saldoActual - valor < 0)
+                throw new ApplicationException("Saldo insuficiente");
+
             var transaccion = new Transaccion { 
                 CuentaId = cuentaId,
                 Fecha = DateTime.Now,
