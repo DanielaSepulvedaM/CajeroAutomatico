@@ -41,7 +41,7 @@ namespace CajeroAutomatico1.pantallas
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresar.ForeColor = System.Drawing.Color.White;
-            this.btnRegresar.Location = new System.Drawing.Point(268, 392);
+            this.btnRegresar.Location = new System.Drawing.Point(291, 368);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(230, 46);
             this.btnRegresar.TabIndex = 10;
@@ -50,11 +50,10 @@ namespace CajeroAutomatico1.pantallas
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::CajeroAutomatico1.Properties.Resources.Imagenn53;
+            this.pictureBox1.Image = global::CajeroAutomatico1.Properties.Resources.Imagenn23;
             this.pictureBox1.Location = new System.Drawing.Point(0, 1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(800, 385);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.Size = new System.Drawing.Size(800, 344);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 

@@ -689,5 +689,15 @@ namespace CajeroAutomatico1.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Imagenn53 {
+            get {
+                object obj = ResourceManager.GetObject("Imagenn53", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
