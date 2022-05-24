@@ -49,5 +49,10 @@ namespace CajeroAutomatico1.pantallas
         {
             shell.NavegarA("cambiarclave");
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            shell.NavegarA("autenticacion");
+        }
     }
 }

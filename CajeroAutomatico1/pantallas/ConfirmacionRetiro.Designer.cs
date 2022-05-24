@@ -118,10 +118,10 @@ namespace CajeroAutomatico1.pantallas
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = global::CajeroAutomatico1.Properties.Resources.Imagen9;
+            this.pictureBox7.Image = global::CajeroAutomatico1.Properties.Resources.Imagen12;
             this.pictureBox7.Location = new System.Drawing.Point(712, 365);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(41, 42);
+            this.pictureBox7.Size = new System.Drawing.Size(43, 42);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 34;
             this.pictureBox7.TabStop = false;
